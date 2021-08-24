@@ -1,10 +1,15 @@
+import Layout from "../components/Layout";
+
 export default function Home() {
   return (
     <div className={`
-      flex h-screen justify-center items-center 
-      bg-gradient-to-r from-purple-600 to-blue-500
+      flex justify-center items-center h-screen
+      bg-gradient-to-r from-blue-500 to-purple-500
+      text-white
     `}>
-      <span className="text-4xl text-blue-400 font-bold capitalize">teste</span>
+      <Layout titulo="Cadastro simples">
+        <span>Conteúdo</span>
+      </Layout>
     </div>
   )
 }
